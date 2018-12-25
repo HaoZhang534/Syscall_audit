@@ -8,7 +8,7 @@ sudo chown root /root/AccessControl.conf
 sudo chmod 644 /root/AccessControl.conf
 echo 然后我们将按README中的各个用户所对应的权限分别运行测试程序syscall_test，首先是静态配置了的5个用户
 sleep 2
-sudo sudo -u cpegg ./syscall_test # change this 'cpegg' to your default system user
+sudo sudo -u zhanghao ./syscall_test # change this 'cpegg' to your default system user
 sleep 1
 echo 
 echo

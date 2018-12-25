@@ -18,15 +18,15 @@ clean:
 	-$(RM) auditdaemon log *.order *.symvers *.o test test_creat syscall_test peda*
 	-$(RM) /tmp/ioTest /tmp/execTest /tmp/creatTest
 adduser:
-	useradd -u 1001 -g 1000 -d /home/test_cpegg -m test_cpegg
-	useradd -u 1003 -g 1000 -d /home/test_cpegg3 -m test_cpegg3
-	groupadd -g 1001 cpegg2
-	useradd -u 1002 -g 1001 -d /home/test_cpegg2 -m test_cpegg2
-	useradd -u 1004 -g 1001 -d /home/test_cpegg4 -m test_cpegg4
+	useradd -u 11001 -g 1000 -d /home/test_cpegg -m test_cpegg
+	useradd -u 11003 -g 1000 -d /home/test_cpegg3 -m test_cpegg3
+	groupadd -g 11001 cpegg2
+	useradd -u 11002 -g 11001 -d /home/test_cpegg2 -m test_cpegg2
+	useradd -u 11004 -g 11001 -d /home/test_cpegg4 -m test_cpegg4
 	# test conf
-	useradd -u 1005 -g 1000 -d /home/test_cpegg5 -m test_cpegg5
-	groupadd -g 1002 cpegg3
-	useradd -u 1006 -g 1002 -d /home/test_cpegg6 -m test_cpegg6
+	useradd -u 11005 -g 1000 -d /home/test_cpegg5 -m test_cpegg5
+	groupadd -g 11002 cpegg3
+	useradd -u 11006 -g 11002 -d /home/test_cpegg6 -m test_cpegg6
 rmuser:
 	-userdel -r test_cpegg
 	-userdel -r test_cpegg2
